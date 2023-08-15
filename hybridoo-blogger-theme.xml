@@ -39,18 +39,18 @@
 <script src="https://cdn.jsdelivr.net/gh/geekjai/hybridoo/jquery-touchswipe/jquery.touchSwipe.min.js"></script>
 
 <!-- hybridoo -->
-<link href='https://cdn.jsdelivr.net/gh/geekjai/hybridoo/hybridoo-themes/theme-alpha.css' rel='stylesheet' type='text/css'/>
-<script src='https://cdn.jsdelivr.net/gh/geekjai/hybridoo/hybridoo-themes/theme-alpha.js'/>
-<script src='https://cdn.jsdelivr.net/gh/geekjai/hybridoo/hybridoo-themes/postsummarycard.js'/>
+<link href='https://cdn.jsdelivr.net/gh/geekjai/hybridoo@v0.0.1/hybridoo-themes/theme-alpha.css' rel='stylesheet' type='text/css'/>
+<script src='https://cdn.jsdelivr.net/gh/geekjai/hybridoo@v0.0.1/hybridoo-themes/theme-alpha.js'/>
+<script src='https://cdn.jsdelivr.net/gh/geekjai/hybridoo@v0.0.1/hybridoo-themes/postsummarycard.js'/>
 
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WZGNDT7GHF"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-08BKH4SC9L"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-WZGNDT7GHF');
+  gtag('config', 'G-08BKH4SC9L');
 </script>
 </head>
 <body id='body-pd'>
