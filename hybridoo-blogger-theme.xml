@@ -24,7 +24,7 @@
 
 ]]></b:skin>
 <script type="text/javascript">
-  window.domainPrefix = "https://hybridoo.blogspot.com";
+  window.domainPrefix = "https://www.hybridoo.com";
   window.fetchHtmlPageLinks = [
     window.domainPrefix + "/2023/08/celebrate-india-independence-day.html",
     window.domainPrefix + "/2023/08/building-code-editor-with-codemirror.html",
@@ -79,15 +79,15 @@
         <div class='nav_list'> 
 
             <a class='nav_link' href='/p/motivational-quotes.html'> 
-                <b:class cond='data:blog.url == &quot;https://www.brightenminds.com/p/motivational-quotes.html&quot;' name='active'/>
+                <b:class cond='data:blog.url == &quot;https://www.hybridoo.com/p/motivational-quotes.html&quot;' name='active'/>
                 <i class='bx bxs-quote-right nav_icon'/><span class='nav_name'>Quotes</span>
             </a>
             <a class='nav_link' href='/p/code-snippet.html'>
-                <b:class cond='data:blog.url == &quot;https://www.brightenminds.com/p/code-snippet.html&quot;' name='active'/>
+                <b:class cond='data:blog.url == &quot;https://www.hybridoo.com/p/code-snippet.html&quot;' name='active'/>
                 <i class='bx bx-code-block nav_icon'/><span class='nav_name'>Code Snippet</span> 
             </a>
             <a class='nav_link' href='/p/javascript-guide.html'>
-              <b:class cond='data:blog.url == &quot;https://www.brightenminds.com/p/javascript-guide.html&quot;' name='active'/>
+              <b:class cond='data:blog.url == &quot;https://www.hybridoo.com/p/javascript-guide.html&quot;' name='active'/>
               <i class='bx bxl-javascript nav_icon'></i><span class='nav_name'>JavaScript</span>
             </a>        
             <!--
