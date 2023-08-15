@@ -1,0 +1,236 @@
+
+<!DOCTYPE html>
+<html class='no-js' dir='ltr' lang='en' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<head>
+<link href='https://www.blogger.com/static/v1/widgets/55013136-widget_css_bundle.css' rel='stylesheet' type='text/css'/>
+<meta content='width=device-width' name='viewport'/>
+<link href='//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css' rel='stylesheet'/>
+<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900" rel="stylesheet" type="text/css">
+<!-- Addition of bootstrap 5 -->
+<link crossorigin='anonymous' href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css' integrity='sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC' rel='stylesheet'/>
+<link href='https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css' rel='stylesheet' type='text/css'/>
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+<meta content='blogger' name='generator'/>
+<link href='https://www.brightenminds.com/favicon.ico' rel='icon' type='image/x-icon'/>
+<link href='https://www.brightenminds.com/2023/08/async-and-await-in-javascript.html' rel='canonical'/>
+<link rel="alternate" type="application/atom+xml" title="Brighten Minds - Atom" href="https://www.brightenminds.com/feeds/posts/default" />
+<link rel="alternate" type="application/rss+xml" title="Brighten Minds - RSS" href="https://www.brightenminds.com/feeds/posts/default?alt=rss" />
+<link rel="service.post" type="application/atom+xml" title="Brighten Minds - Atom" href="https://www.blogger.com/feeds/2622226232661101501/posts/default" />
+
+<link rel="alternate" type="application/atom+xml" title="Brighten Minds - Atom" href="https://www.brightenminds.com/feeds/4944996747674517799/comments/default" />
+<!--Can't find substitution for tag [blog.ieCssRetrofitLinks]-->
+<meta content='The async keyword gives a simpler way to work with asynchronous promise-based code.' name='description'/>
+<meta content='https://www.brightenminds.com/2023/08/async-and-await-in-javascript.html' property='og:url'/>
+<meta content='Async and Await in JavaScript' property='og:title'/>
+<meta content='The async keyword gives a simpler way to work with asynchronous promise-based code.' property='og:description'/>
+<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+<title>Async and Await in JavaScript ~ Brighten Minds</title>
+<style id='page-skin-1' type='text/css'><!--
+
+--></style>
+<script src='https://code.jquery.com/jquery-3.5.0.js' type='text/javascript'></script>
+<script crossorigin='anonymous' integrity='sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM' src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js' type='text/javascript'></script>
+<!-- jquery-highlight -->
+<link href='https://cdn.jsdelivr.net/gh/geekjai/brightenminds/jquery-highlight/jquery.highlight.css' rel='stylesheet' type='text/css'/>
+<script src='https://cdn.jsdelivr.net/gh/geekjai/brightenminds/jquery-highlight/jquery.highlight.js'></script>
+<!-- brighten minds -->
+<link href='./bm-themes/theme-alpha.css' rel='stylesheet' type='text/css'/>
+<script src='https://cdn.jsdelivr.net/gh/geekjai/brightenminds/bm-themes/theme-alpha.js'></script>
+<script src='https://cdn.jsdelivr.net/gh/geekjai/brightenminds@0.0.9/postsummarycard.js'></script>
+<!-- Google tag (gtag.js) -->
+<script async='async' src='https://www.googletagmanager.com/gtag/js?id=G-WZGNDT7GHF'></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WZGNDT7GHF');
+</script>
+<link href='https://www.blogger.com/dyn-css/authorization.css?targetBlogID=2622226232661101501&amp;zx=949a9399-5799-466e-9044-95852f72afc4' media='none' onload='if(media!=&#39;all&#39;)media=&#39;all&#39;' rel='stylesheet'/><noscript><link href='https://www.blogger.com/dyn-css/authorization.css?targetBlogID=2622226232661101501&amp;zx=949a9399-5799-466e-9044-95852f72afc4' rel='stylesheet'/></noscript>
+<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
+<meta name='google-adsense-platform-domain' content='blogspot.com'/>
+
+</head>
+<body id='body-pd'>
+<!-- Header -->
+<header class='header' id='header'>
+<div class='row'>
+<div class='header_toggle col-2'>
+<i class='bx bx-menu' id='header-toggle'></i>
+</div>
+<div class='col-10'>
+<a href='/'><span class='brand_title'>Brighten Minds</span></a>
+</div>
+</div>
+<!-- <div class="header_img"> <img src="https://lh3.googleusercontent.com/drive-viewer/AITFw-yVBk7jZmMLg9_pseyGD3ecarqpzpPXrkXHDXvglEq04QsrGa9rxLaJW0wv8xIiYrqFo6NAemWme6ldHjT6HGC8-DQ_fQ=s2560" alt=""/></div> -->
+</header>
+<!-- sidebar navigation-->
+<div class='l-navbar' id='nav-bar' style='height: 100%; overflow: hidden scroll;'>
+<nav class='nav'>
+<div>
+<!-- <a class='nav_logo' href='/'> <div class='logo_img'> <img alt='Brighten Minds Logo' src='https://lh3.googleusercontent.com/drive-viewer/AITFw-yVBk7jZmMLg9_pseyGD3ecarqpzpPXrkXHDXvglEq04QsrGa9rxLaJW0wv8xIiYrqFo6NAemWme6ldHjT6HGC8-DQ_fQ=s2560'/></div> <span class='nav_logo-name'>Brighten Minds</span> </a> -->
+<div class='nav_list'>
+<a class='nav_link' href='https://www.brightenminds.com/p/code-snippet.html'>
+<i class='bx bx-code-block nav_icon'></i><span class='nav_name'>Code Snippet</span>
+</a>
+<a class='nav_link' href='https://www.brightenminds.com/p/motivational-quotes.html'>
+<i class='bx bxs-quote-right nav_icon'></i><span class='nav_name'>Quotes</span>
+</a>
+<a class='nav_link' href='https://www.brightenminds.com/p/javascript-guide.html'>
+<i class='bx bxl-javascript nav_icon'></i><span class='nav_name'>JavaScript</span>
+</a>
+<!-- <a class='nav_link' href='#'> <i class='bx bx-message-square-detail nav_icon'/> <span class='nav_name'>Messages</span> </a> <a class='nav_link' href='#'> <i class='bx bx-bookmark nav_icon'/> <span class='nav_name'>Bookmark</span> </a> <a class='nav_link' href='#'> <i class='bx bx-folder nav_icon'/> <span class='nav_name'>Files</span> </a> <a class='nav_link' href='#'> <i class='bx bx-bar-chart-alt-2 nav_icon'/> <span class='nav_name'>Stats</span> </a> -->
+</div>
+</div>
+<!-- <a class='nav_link' href='#'> <i class='bx bx-log-out nav_icon'/> <span class='nav_name'>SignOut</span> </a> -->
+</nav>
+</div>
+<!--Container Main start-->
+<div class='bg-light bmContainer' id='bmContainer'>
+<!-- when page is homepage i.e. index page -->
+<!-- begin bmMainContentWrapper -->
+<div class='bmMainContentWrapper clearfix'>
+<!-- .bmMainContent-->
+<div class='bmMainContent'>
+<!-- section content -->
+<div class='contentbpart'>
+<!-- when page is homepage i.e. index page -->
+<div class='mainblogsec section' id='mainblogsec'><div class='widget Blog' data-version='1' id='Blog1'>
+<div class='blog-posts hfeed'>
+<!--Can't find substitution for tag [defaultAdStart]-->
+<div class='post-outer'>
+<article class='post hentry'>
+<div class='post-body entry-content clearfix'>
+<a name='4944996747674517799'></a>
+<h1 class='post-title entry-title'>
+<a href='https://www.brightenminds.com/2023/08/async-and-await-in-javascript.html'>Async and Await in JavaScript</a>
+</h1>
+<div class='entry-colors'>
+<div class='color_col_1'></div>
+<div class='color_col_2'></div>
+<div class='color_col_3'></div></div>
+<div><b>Quick Overview:</b></div><ul style="text-align: left;"><li>The async keyword gives a simpler way to work with asynchronous promise-based code.&nbsp;</li><li>Adding async at the start of a function makes it an async function.</li><li>Inside an async function, use the await keyword before a call to a function that returns a promise. This makes the code wait at that point until the promise is settled, at which point the fulfilled value of the promise is treated as a return value, or the rejected value is thrown.</li><li>async and await enable to write code that uses asynchronous functions but looks like synchronous code.</li><li>The async and await keywords make it easier to build an operation from a series of consecutive asynchronous function calls, avoiding the need to create explicit promise chains.</li></ul><div><b>Note:</b>&nbsp;<a href="#" class="bmlink">async functions always return a promise.</a></div>
+<b>Example</b>
+<pre class="code" data-language="js">
+async function customAsyncFn() {
+  await setTimeout(() => {
+    console.log("called setTimeout");
+  }, Math.random() * 1000);
+  console.log("exit fn customAsyncFn");
+}
+//setTimeout is an async function but it will not returns a promise,
+//hence await will not wait at that point...
+//so first "exit fn customAsyncFn" will be printed
+customAsyncFn(); 
+
+async function customAsyncFn2() {
+  //make this async funtion to satisfy point 3
+  //Inside an async function, use the await keyword before a call to a function 
+  //that returns a promise.
+  await new Promise(resolve => {
+    setTimeout(() => {
+      console.log("called setTimeout2");
+      resolve();
+    }, Math.random() * 1000);
+  });
+  console.log("exit fn customAsyncFn2");
+}
+//now in case of fn customAsyncFn2
+//await will wait at that point until the promise is settled or rejected
+////so first "called setTimeout2" will be printed
+customAsyncFn2();
+</pre>
+<b>Output</b>
+<div class="bg-light p-1">
+exit fn customAsyncFn<br/>
+called setTimeout<br/>
+called setTimeout2<br/>
+exit fn customAsyncFn2<br/>
+</div>
+<div class="onecompiler">
+<h2>Try it</h2>
+<iframe frameborder="0" height="600px" src="https://onecompiler.com/embed/javascript/3zhe6dhkq" width="100%"></iframe>
+</div>
+<div class="bm-relatedlinks">
+  <h2>Related Topics</h2>
+  <table class="table">
+  <tbody>
+      <tr>
+        <td><a href="/2023/08/how-to-use-asyncawait-with-foreach-loop.html">How to use async/await with forEach loop in JavaScript?</a></td>
+      </tr>
+      <tr>
+        <td><a href="/2023/08/how-to-use-promises-in-javascript.html">How to use promises in JavaScript</a></td>
+      </tr>
+      <!--
+      <tr>
+        <td></td>
+      </tr>
+  -->
+    </tbody>
+  </table> 
+</div>
+<div style='clear: both;'></div>
+</div>
+<div class='bpostmeta'>
+<span>
+<i class='fa fa-bookmark'></i>
+<a href='https://www.brightenminds.com/search/label/asynchronous%20programming' rel='tag'>
+asynchronous programming
+</a>
+, 
+<a href='https://www.brightenminds.com/search/label/javascript' rel='tag'>
+javascript
+</a>
+</span>
+</div>
+</article>
+</div>
+<!--Can't find substitution for tag [adEnd]-->
+</div>
+<div style='clear: both;'></div>
+</div></div>
+</div>
+<!-- end of contentbpart-->
+<!-- begin aside -->
+<aside>
+<!-- Sidebar Widgets Area -->
+<div class='bmLeftSidebar section' id='sidebartop'><div class='widget FeaturedPost' data-version='1' id='FeaturedPost1'>
+<h2 class='title'>Featured Post</h2>
+<div class='post-summary'>
+<h3><a href='https://www.brightenminds.com/2023/08/build-online-code-formatter.html'>Build Online Code Formatter</a></h3>
+<img alt='Brighten Minds Featured Post' class='image' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_k7ecldr-dHxevVsvgtJ3nzJea1hlSWTqXwwrR9evAxqu7QABFpO2HHeVPMg1pQt-wDpCSJAhbBPo_CdlTLmk4rYqHmHaJkFTDcle_Hk2GM7kB8ZOB1ARSyITwu5JHZJxQKS-Q13_eGcwHDQKhlGHuxlzs4iBZM2J-oXFThN4HfYAGVftd8rvF95v6Ro/s1600/Untitled%20Diagram.drawio.png'/>
+</div>
+<style type='text/css'>
+    .image {
+      width: 100%;
+    }
+  </style>
+<div class='clear'></div>
+</div>
+</div>
+</aside>
+<!-- END bmLeftSidebar Widgets Area -->
+<!-- end aside -->
+</div>
+<!-- .bmMainContent-->
+</div>
+<!-- end .bmMainContentWrapper this complete wrapper part will always be same-->
+</div><!-- end of bmContainer-->
+<!-- begin footer-container -->
+<footer>
+<div class='footer'>
+</div>
+</footer><!-- end footer-container -->
+
+<script type="text/javascript" src="https://www.blogger.com/static/v1/widgets/2338307535-widgets.js"></script>
+<script type='text/javascript'>
+window['__wavt'] = 'AOuZoY56fKi0FD4j-6Fr3Pt60_v9tDFZyQ:1691930215740';_WidgetManager._Init('//www.blogger.com/rearrange?blogID\x3d2622226232661101501','//www.brightenminds.com/2023/08/async-and-await-in-javascript.html','2622226232661101501');
+_WidgetManager._SetDataContext([{'name': 'blog', 'data': {'blogId': '2622226232661101501', 'title': 'Brighten Minds', 'url': 'https://www.brightenminds.com/2023/08/async-and-await-in-javascript.html', 'canonicalUrl': 'https://www.brightenminds.com/2023/08/async-and-await-in-javascript.html', 'homepageUrl': 'https://www.brightenminds.com/', 'searchUrl': 'https://www.brightenminds.com/search', 'canonicalHomepageUrl': 'https://www.brightenminds.com/', 'blogspotFaviconUrl': 'https://www.brightenminds.com/favicon.ico', 'bloggerUrl': 'https://www.blogger.com', 'hasCustomDomain': true, 'httpsEnabled': true, 'enabledCommentProfileImages': true, 'gPlusViewType': 'FILTERED_POSTMOD', 'adultContent': false, 'analyticsAccountNumber': '', 'encoding': 'UTF-8', 'locale': 'en', 'localeUnderscoreDelimited': 'en', 'languageDirection': 'ltr', 'isPrivate': false, 'isMobile': false, 'isMobileRequest': false, 'mobileClass': '', 'isPrivateBlog': false, 'isDynamicViewsAvailable': true, 'feedLinks': '\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22Brighten Minds - Atom\x22 href\x3d\x22https://www.brightenminds.com/feeds/posts/default\x22 /\x3e\n\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/rss+xml\x22 title\x3d\x22Brighten Minds - RSS\x22 href\x3d\x22https://www.brightenminds.com/feeds/posts/default?alt\x3drss\x22 /\x3e\n\x3clink rel\x3d\x22service.post\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22Brighten Minds - Atom\x22 href\x3d\x22https://www.blogger.com/feeds/2622226232661101501/posts/default\x22 /\x3e\n\n\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22Brighten Minds - Atom\x22 href\x3d\x22https://www.brightenminds.com/feeds/4944996747674517799/comments/default\x22 /\x3e\n', 'meTag': '', 'adsenseHostId': 'ca-host-pub-1556223355139109', 'adsenseHasAds': false, 'adsenseAutoAds': false, 'boqCommentIframeForm': true, 'loginRedirectParam': '', 'view': '', 'dynamicViewsCommentsSrc': '//www.blogblog.com/dynamicviews/4224c15c4e7c9321/js/comments.js', 'dynamicViewsScriptSrc': '//www.blogblog.com/dynamicviews/5b36e7ffd81e773b', 'plusOneApiSrc': 'https://apis.google.com/js/platform.js', 'disableGComments': true, 'blitzPostInterstitial': false, 'interstitialAccepted': false, 'sharing': {'platforms': [{'name': 'Get link', 'key': 'link', 'shareMessage': 'Get link', 'target': ''}, {'name': 'Facebook', 'key': 'facebook', 'shareMessage': 'Share to Facebook', 'target': 'facebook'}, {'name': 'BlogThis!', 'key': 'blogThis', 'shareMessage': 'BlogThis!', 'target': 'blog'}, {'name': 'Twitter', 'key': 'twitter', 'shareMessage': 'Share to Twitter', 'target': 'twitter'}, {'name': 'Pinterest', 'key': 'pinterest', 'shareMessage': 'Share to Pinterest', 'target': 'pinterest'}, {'name': 'Email', 'key': 'email', 'shareMessage': 'Email', 'target': 'email'}], 'disableGooglePlus': true, 'googlePlusShareButtonWidth': 0, 'googlePlusBootstrap': '\x3cscript type\x3d\x22text/javascript\x22\x3ewindow.___gcfg \x3d {\x27lang\x27: \x27en\x27};\x3c/script\x3e'}, 'hasCustomJumpLinkMessage': false, 'jumpLinkMessage': 'Read more', 'pageType': 'item', 'postId': '4944996747674517799', 'pageName': 'Async and Await in JavaScript', 'pageTitle': 'Brighten Minds: Async and Await in JavaScript', 'metaDescription': 'The async keyword gives a simpler way to work with asynchronous promise-based code.'}}, {'name': 'features', 'data': {}}, {'name': 'messages', 'data': {'edit': 'Edit', 'linkCopiedToClipboard': 'Link copied to clipboard!', 'ok': 'Ok', 'postLink': 'Post Link'}}, {'name': 'template', 'data': {'name': 'custom', 'localizedName': 'Custom', 'isResponsive': false, 'isAlternateRendering': false, 'isCustom': true}}, {'name': 'view', 'data': {'classic': {'name': 'classic', 'url': '?view\x3dclassic'}, 'flipcard': {'name': 'flipcard', 'url': '?view\x3dflipcard'}, 'magazine': {'name': 'magazine', 'url': '?view\x3dmagazine'}, 'mosaic': {'name': 'mosaic', 'url': '?view\x3dmosaic'}, 'sidebar': {'name': 'sidebar', 'url': '?view\x3dsidebar'}, 'snapshot': {'name': 'snapshot', 'url': '?view\x3dsnapshot'}, 'timeslide': {'name': 'timeslide', 'url': '?view\x3dtimeslide'}, 'isMobile': false, 'title': 'Async and Await in JavaScript', 'description': 'The async keyword gives a simpler way to work with asynchronous promise-based code.', 'url': 'https://www.brightenminds.com/2023/08/async-and-await-in-javascript.html', 'type': 'item', 'isSingleItem': true, 'isMultipleItems': false, 'isError': false, 'isPage': false, 'isPost': true, 'isHomepage': false, 'isArchive': false, 'isLabelSearch': false, 'postId': 4944996747674517799}}]);
+_WidgetManager._RegisterWidget('_HeaderView', new _WidgetInfo('Header1', 'headersec', document.getElementById('Header1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogView', new _WidgetInfo('Blog1', 'mainblogsec', document.getElementById('Blog1'), {'cmtInteractionsEnabled': false, 'lightboxEnabled': true, 'lightboxModuleUrl': 'https://www.blogger.com/static/v1/jsbin/4258927022-lbx.js', 'lightboxCssUrl': 'https://www.blogger.com/static/v1/v-css/3268905543-lightbox_bundle.css'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_FeaturedPostView', new _WidgetInfo('FeaturedPost1', 'sidebartop', document.getElementById('FeaturedPost1'), {}, 'displayModeFull'));
+</script>
+</body>
+</html>
