@@ -72,8 +72,8 @@
      <div>
         <!--
         <a class='nav_logo' href='/'> 
-            <div class='logo_img'> <img alt='Brighten Minds Logo' src='https://lh3.googleusercontent.com/drive-viewer/AITFw-yVBk7jZmMLg9_pseyGD3ecarqpzpPXrkXHDXvglEq04QsrGa9rxLaJW0wv8xIiYrqFo6NAemWme6ldHjT6HGC8-DQ_fQ=s2560'/></div>
-            <span class='nav_logo-name'>Brighten Minds</span> 
+            <div class='logo_img'> <img alt='Hybridoo Logo' src='https://lh3.googleusercontent.com/drive-viewer/AITFw-yVBk7jZmMLg9_pseyGD3ecarqpzpPXrkXHDXvglEq04QsrGa9rxLaJW0wv8xIiYrqFo6NAemWme6ldHjT6HGC8-DQ_fQ=s2560'/></div>
+            <span class='nav_logo-name'>Hybridoo</span>
         </a>
         -->
         <div class='nav_list'> 
@@ -368,7 +368,7 @@
       </p>
     </b:if>
     <b:if cond='data:showFirstImage and data:postFirstImage != &quot;&quot;'>
-      <img alt="Brighten Minds Featured Post" class='image' expr:src='data:postFirstImage'/>
+      <img alt="Hybridoo Featured Post" class='image' expr:src='data:postFirstImage'/>
     </b:if>
   </div>
 
