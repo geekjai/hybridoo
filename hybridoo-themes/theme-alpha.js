@@ -124,8 +124,13 @@ $(document).ready(function(){
       }
     }
      // When the user clicks on the button, scroll to the top of the document
+    $("body").on('click touchstart', '#hdo-scroll-top-button', function() {
+      $("html, body").animate({ scrollTop: "0" });
+      return false;
+    });
+    /*
     $("#hdo-scroll-top-button").click(function(){
       $("html, body").animate({ scrollTop: "0" });
-    });
+    });*/
     //end of scroll top logic
 });
