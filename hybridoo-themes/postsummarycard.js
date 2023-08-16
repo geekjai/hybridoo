@@ -1,4 +1,12 @@
 $(document ).ready(function() {
+	if ( window.location.pathname == '/' ) {
+    	// Index (home) page
+    	//execute only for homepage
+	} else {
+	    // Other page
+	    //console.log(window.location.pathname);
+	    return;
+	}
 	if(window.domainPrefix === undefined || window.domainPrefix === null) {
 		return;
 	}
