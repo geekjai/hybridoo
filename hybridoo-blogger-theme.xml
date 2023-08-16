@@ -26,9 +26,12 @@
 <script type="text/javascript">
   window.domainPrefix = "https://www.hybridoo.com";
   window.fetchHtmlPageLinks = [
-    window.domainPrefix + "/2023/08/celebrate-india-independence-day.html",
+    window.domainPrefix + "/2023/08/build-sitemap-extractor-using-javascript.html",
     window.domainPrefix + "/2023/08/building-code-editor-with-codemirror.html",
-    window.domainPrefix + "/2023/08/motivational-quotes.html"
+    window.domainPrefix + "/2023/08/motivational-quotes.html",
+    window.domainPrefix + "/2023/08/learn-to-host-repository-on-jsdelivr-cdn.html",
+    window.domainPrefix + "/2023/08/bootstrap-5-sidebar-menu-with-toggle.html",
+    window.domainPrefix + "/2023/08/bootstrap-5-ribbon-design.html"
   ];
 </script>
 <script src='https://code.jquery.com/jquery-3.5.0.js' type='text/javascript'/>
