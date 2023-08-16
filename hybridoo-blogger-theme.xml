@@ -42,9 +42,9 @@
 <script src="https://cdn.jsdelivr.net/gh/geekjai/hybridoo/jquery-touchswipe/jquery.touchSwipe.min.js"></script>
 
 <!-- hybridoo -->
-<link href='https://cdn.jsdelivr.net/gh/geekjai/hybridoo@v0.0.1/hybridoo-themes/theme-alpha.css' rel='stylesheet' type='text/css'/>
-<script src='https://cdn.jsdelivr.net/gh/geekjai/hybridoo@v0.0.1/hybridoo-themes/theme-alpha.js'/>
-<script src='https://cdn.jsdelivr.net/gh/geekjai/hybridoo@v0.0.1/hybridoo-themes/postsummarycard.js'/>
+<link href='https://cdn.jsdelivr.net/gh/geekjai/hybridoo@v0.0.3/hybridoo-themes/theme-alpha.css' rel='stylesheet' type='text/css'/>
+<script src='https://cdn.jsdelivr.net/gh/geekjai/hybridoo@v0.0.3/hybridoo-themes/theme-alpha.js'/>
+<script src='https://cdn.jsdelivr.net/gh/geekjai/hybridoo@v0.0.3/hybridoo-themes/postsummarycard.js'/>
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-08BKH4SC9L"></script>
@@ -121,7 +121,7 @@
     <div class='headersec section' id='headersec'>
       <div id='header-inner'>
         <a href='https://www.hybridoo.com/' style='display: block'>
-          <img alt='hybridoo banner' height='253px; ' id='bannerimg' src='https://blogger.googleusercontent.com/img/a/AVvXsEjOq2FOmuHXcC8KrNyN72eKdcZp11K-hkiiZSQzDsMQLOv9XLET8BMy71FJ6o8AVqo3p4fvdh7fIOaetLEz9Stu9VmMmeji196TiaOr2KDDjcVoTi4jh_yg8Hu23y1v93ijG-6elzLwMwL2IVTul9DWkaYiZjInV8F5XwdfmEHUd-MiIOmbf9nnQg6e4YQ=s1600' style='display: block;padding:0px 0px 5px 0px;margin: 0px auto;' width='1600px; '/>
+          <img alt='hybridoo banner' height='253px; ' id='bannerimg' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_BsTdMLn4beQKOOG_j58LB1kv8nc_PhsKIgsqkejH3wWuCZlNrI4mbfVyAvtCHZFCyBuR9nYt07Zfll3gxlifRcxua-IRkhekL52i1dyJcUisaZgTWYWd6PnP4UYeypJxhKyOoGob9y_I70emKMEecFs5n87nNfTwjVCiaWM9XT4-3LSAieb1Rlev2qo/s1600/hybridoo-banner-2.jpeg' style='display: block;padding:0px 0px 5px 0px;margin: 0px auto;' width='1600px; '/>
         </a>
       </div>
     </div>

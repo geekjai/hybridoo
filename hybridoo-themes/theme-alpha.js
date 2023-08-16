@@ -105,5 +105,27 @@ document.addEventListener("DOMContentLoaded", function (event) {
   
 }); 
 $(document).ready(function(){
+    //syntax highlighter
     $('pre.code').highlight({source:1, zebra:1, indent:'space', list:'ol'});
+
+    //add scroll top button
+    $("body").append('<button id="hdo-scroll-top-button"><i class="bx bx-arrow-to-top"></i></button>');
+    // Get the button
+    let mybutton = document.getElementById("hdo-scroll-top-button");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {   
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+     // When the user clicks on the button, scroll to the top of the document
+    $("#hdo-scroll-top-button").click(function(){
+      $("html, body").animate({ scrollTop: "0" });
+    });
+    //end of scroll top logic
 });

@@ -656,3 +656,29 @@ footer {
 .bmlink:hover {
     color: #2A2A26;
 }
+/*=============================================================
+===================scroll to top button
+=============================================================*/
+#hdo-scroll-top-button {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #1877F2;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    opacity: 0.7;
+}
+#hdo-scroll-top-button:hover {
+    background-color: #1877F2;
+    opacity: 1;
+}
+#hdo-scroll-top-button i {
+    margin-top: 5px;
+    font-size: 32px;
+}
