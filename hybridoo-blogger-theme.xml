@@ -42,9 +42,9 @@
 <script src="https://cdn.jsdelivr.net/gh/geekjai/hybridoo/jquery-touchswipe/jquery.touchSwipe.min.js"></script>
 
 <!-- hybridoo -->
-<link href='https://cdn.jsdelivr.net/gh/geekjai/hybridoo@v0.0.3/hybridoo-themes/theme-alpha.css' rel='stylesheet' type='text/css'/>
-<script src='https://cdn.jsdelivr.net/gh/geekjai/hybridoo@v0.0.3/hybridoo-themes/theme-alpha.js'/>
-<script src='https://cdn.jsdelivr.net/gh/geekjai/hybridoo@v0.0.3/hybridoo-themes/postsummarycard.js'/>
+<link href='https://cdn.jsdelivr.net/gh/geekjai/hybridoo@v0.0.5/hybridoo-themes/theme-alpha.css' rel='stylesheet' type='text/css'/>
+<script src='https://cdn.jsdelivr.net/gh/geekjai/hybridoo@v0.0.5/hybridoo-themes/theme-alpha.js'/>
+<script src='https://cdn.jsdelivr.net/gh/geekjai/hybridoo@v0.0.5/hybridoo-themes/postsummarycard.js'/>
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-08BKH4SC9L"></script>
