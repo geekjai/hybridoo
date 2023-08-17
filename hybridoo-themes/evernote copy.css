@@ -38,6 +38,9 @@ en-note.peso>:last-child:last-child{
         padding:0!important
     }
 }
+en-note.peso .para,en-note.peso h1,en-note.peso h2,en-note.peso h3,en-note.peso h4,en-note.peso h5{
+    color:var(--textblock-lightmode-color,inherit)
+}
 en-note.peso table{
     max-width:100%
 }
@@ -6403,11 +6406,6 @@ en-note.peso {
 .html-note h1 {
     display: none;
 }
-.html-note {
-
-}
-en-note.peso {
-    color: var(--body-color);
-    font: var(--body-font);
-    font-size: var(--normal-font-size);
+.html-note{
+    
 }
