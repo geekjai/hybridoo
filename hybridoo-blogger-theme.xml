@@ -42,11 +42,11 @@
 <script src="https://cdn.jsdelivr.net/gh/geekjai/hybridoo/jquery-touchswipe/jquery.touchSwipe.min.js"></script>
 
 <!-- hybridoo -->
-<link href='https://cdn.jsdelivr.net/gh/geekjai/hybridoo@v0.0.7/hybridoo-themes/theme-alpha-var.css' rel='stylesheet' type='text/css'/>
-<link href='https://cdn.jsdelivr.net/gh/geekjai/hybridoo@v0.0.7/hybridoo-themes/evernote.css' rel='stylesheet' type='text/css'/>
-<link href='https://cdn.jsdelivr.net/gh/geekjai/hybridoo@v0.0.7/hybridoo-themes/theme-alpha.css' rel='stylesheet' type='text/css'/>
-<script src='https://cdn.jsdelivr.net/gh/geekjai/hybridoo@v0.0.7/hybridoo-themes/theme-alpha.js'/>
-<script src='https://cdn.jsdelivr.net/gh/geekjai/hybridoo@v0.0.7/hybridoo-themes/postsummarycard.js'/>
+<link href='https://cdn.jsdelivr.net/gh/geekjai/hybridoo@v0.0.9/hybridoo-themes/theme-alpha-var.css' rel='stylesheet' type='text/css'/>
+<link href='https://cdn.jsdelivr.net/gh/geekjai/hybridoo@v0.0.9/hybridoo-themes/evernote.css' rel='stylesheet' type='text/css'/>
+<link href='https://cdn.jsdelivr.net/gh/geekjai/hybridoo@v0.0.9/hybridoo-themes/theme-alpha.css' rel='stylesheet' type='text/css'/>
+<script src='https://cdn.jsdelivr.net/gh/geekjai/hybridoo@v0.0.9/hybridoo-themes/theme-alpha.js'/>
+<script src='https://cdn.jsdelivr.net/gh/geekjai/hybridoo@v0.0.9/hybridoo-themes/postsummarycard.js'/>
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-08BKH4SC9L"></script>
@@ -94,7 +94,11 @@
             <a class='nav_link' href='/p/javascript-guide.html'>
               <b:class cond='data:blog.url == &quot;https://www.hybridoo.com/p/javascript-guide.html&quot;' name='active'/>
               <i class='bx bxl-javascript nav_icon'></i><span class='nav_name'>JavaScript</span>
-            </a>        
+            </a>  
+            <a class='nav_link' href='/p/discover.html'>
+              <b:class cond='data:blog.url == &quot;https://www.hybridoo.com/p/discover.html&quot;' name='active'/>
+              <i class='bx bxs-compass nav_icon'></i><span class='nav_name'>Discover</span>
+            </a>
             <!--
            <a class='nav_link' href='#'> <i class='bx bx-message-square-detail nav_icon'/>
            <span class='nav_name'>Messages</span> </a> <a class='nav_link' href='#'>

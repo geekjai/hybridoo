@@ -6412,5 +6412,5 @@ en-note.peso {
     font-size: var(--normal-font-size);
 }
 en-codeblock {
-    min-width: 350px;
+    min-width: 300px;
 }

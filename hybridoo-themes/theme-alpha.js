@@ -129,8 +129,12 @@ $(document).ready(function(){
       return false;
     });*/
     
-    $("#hdo-scroll-top-button").click(function(){
-      $("html, body").animate({ scrollTop: "0" });
+    $("#hdo-scroll-top-button").click(function() {
+      //$("html, body").animate({ scrollTop: "0" });
+      $('html, body').animate({
+        scrollTop: 0
+      }, 800);
+      return !1
     });
     //end of scroll top logic
 });
