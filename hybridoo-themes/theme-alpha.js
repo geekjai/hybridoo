@@ -105,6 +105,20 @@ document.addEventListener("DOMContentLoaded", function (event) {
   
 }); 
 $(document).ready(function(){
+
+    //adjusting hdo-iframe width based on devices 
+    const iframes = document.querySelectorAll('.hdo-iframe iframe');
+    if(iframes && iframes.length > 0) {
+      if(window.matchMedia("(max-width: 767px)").matches) {
+        iframes.forEach( ifr => {
+          ifr.setAttribute("width", "100%");
+        });
+      } else {
+        iframes.forEach( ifr => {
+          ifr.setAttribute("width", "33%");
+        });
+      }
+    }
     //syntax highlighter
     $('pre.code').highlight({source:1, zebra:1, indent:'space', list:'ol'});
 
@@ -130,10 +144,10 @@ $(document).ready(function(){
     });*/
     
     $("#hdo-scroll-top-button").click(function() {
-      //$("html, body").animate({ scrollTop: "0" });
-      $('html, body').animate({
+      $("html, body").animate({ scrollTop: "0" });
+      /*$('html, body').animate({
         scrollTop: 0
-      }, 800);
+      }, 800);*/
       return !1
     });
     //end of scroll top logic
