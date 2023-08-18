@@ -83,6 +83,10 @@
         -->
         <div class='nav_list'> 
 
+            <a class='nav_link' href='/p/kids-foundation.html'>
+              <b:class cond='data:blog.url == &quot;https://www.hybridoo.com/p/kids-foundation.html&quot;' name='active'/>
+              <i class='bx bx-book-reader nav_icon'></i><span class='nav_name'>Kids Foundation</span>
+            </a>
             <a class='nav_link' href='/p/motivational-quotes.html'> 
                 <b:class cond='data:blog.url == &quot;https://www.hybridoo.com/p/motivational-quotes.html&quot;' name='active'/>
                 <i class='bx bxs-quote-right nav_icon'/><span class='nav_name'>Quotes</span>
@@ -98,7 +102,7 @@
             <a class='nav_link' href='/p/discover.html'>
               <b:class cond='data:blog.url == &quot;https://www.hybridoo.com/p/discover.html&quot;' name='active'/>
               <i class='bx bxs-compass nav_icon'></i><span class='nav_name'>Discover</span>
-            </a>
+            </a> 
             <!--
            <a class='nav_link' href='#'> <i class='bx bx-message-square-detail nav_icon'/>
            <span class='nav_name'>Messages</span> </a> <a class='nav_link' href='#'>
