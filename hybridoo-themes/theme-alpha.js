@@ -111,7 +111,8 @@ $(document).ready(function(){
     if(iframes && iframes.length > 0) {
       if(window.matchMedia("(max-width: 767px)").matches) {
         iframes.forEach( ifr => {
-          ifr.setAttribute("width", "100%");
+          ifr.setAttribute("width", "98%");
+          ifr.style["margin-bottom"] = "20px";
         });
       } else {
         iframes.forEach( ifr => {
