@@ -11,7 +11,8 @@
     --white-color: #F7F6FB;
     --body-font: 'Nunito', sans-serif;
     --normal-font-size: 1rem;
-    --z-fixed: 100
+    --z-index-navbar-header: 10;
+    --z-index-content: 1;
 }
 *,
 ::before,
@@ -44,7 +45,7 @@ a {
     justify-content: space-between;
     padding: 0 1rem;
     background-color: #f8f9fa!important;
-    z-index: var(--z-fixed);
+    z-index: var(--z-index-navbar-header);
     transition: .5s;
     box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .1);
 }
@@ -89,7 +90,7 @@ a {
     background-color: var(--first-color);
     padding: .5rem 1rem 0 0;
     transition: .5s;
-    z-index: var(--z-fixed)
+    z-index: var(--z-index-navbar-header)
 }
 .nav {
     display: flex;
@@ -218,7 +219,7 @@ bmMainContent is having column 1. contentbpart and 2. aside (use for AdSense)
     float: left;
     position: relative;
     margin-left: 0px;
-    z-index: 10;
+    z-index: var(--z-index-content);
     width: 900px;
 }
 .bmMainContent article {
@@ -327,7 +328,7 @@ bmMainContent is having column 1. contentbpart and 2. aside (use for AdSense)
     width: 280px;
     height:100%;
     padding: 30px 30px;
-    z-index: 1;
+    z-index: var(--z-index-content);
     font-size: 14px;
 }
 .bmMainContent aside .widget_sidebar{
@@ -667,7 +668,7 @@ footer {
     position: fixed;
     bottom: 20px;
     right: 30px;
-    z-index: 99;
+    z-index: 10;
     font-size: 18px;
     border: none;
     outline: none;

@@ -44,7 +44,7 @@
 <script src="https://cdn.jsdelivr.net/gh/geekjai/hybridoo/jquery-touchswipe/jquery.touchSwipe.min.js"></script>
 
 <!-- hybridoo -->
-<link href='https://cdn.jsdelivr.net/gh/geekjai/hybridoo@v0.0.12/hybridoo-themes/theme-alpha.css' rel='stylesheet' type='text/css'/>
+<link href='https://cdn.jsdelivr.net/gh/geekjai/hybridoo@v0.0.13/hybridoo-themes/theme-alpha.css' rel='stylesheet' type='text/css'/>
 <script src='https://cdn.jsdelivr.net/gh/geekjai/hybridoo@v0.0.12/hybridoo-themes/theme-alpha.js'/>
 <script src='https://cdn.jsdelivr.net/gh/geekjai/hybridoo@v0.0.12/hybridoo-themes/postsummarycard.js'/>
 
@@ -325,34 +325,6 @@
 <aside>
 <!-- Sidebar Widgets Area -->
 <b:section class='bmLeftSidebar' id='sidebartop' preferred='yes'>
-  <b:widget id='Followers1' locked='false' title='Follow Hybridoo' type='Followers'>
-    <b:widget-settings>
-      <b:widget-setting name='borderColorTransparent'>true</b:widget-setting>
-      <b:widget-setting name='useTemplateDefaultStyles'>true</b:widget-setting>
-      <b:widget-setting name='contentSecondaryTextColor'>#000000</b:widget-setting>
-      <b:widget-setting name='contentHeadlineColor'>#000000</b:widget-setting>
-      <b:widget-setting name='endcapTextColor'>#000000</b:widget-setting>
-      <b:widget-setting name='contentTextColor'>#000000</b:widget-setting>
-      <b:widget-setting name='contentSecondaryLinkColor'>#FFFFFF</b:widget-setting>
-      <b:widget-setting name='endcapLinkColor'>#000000</b:widget-setting>
-      <b:widget-setting name='contentLinkColor'>#000000</b:widget-setting>
-    </b:widget-settings>
-    <b:includable id='main'>
-  <b:if cond='data:title != &quot;&quot; and data:codeSnippet != &quot;&quot;'>
-    <h2 class='title'><data:title/></h2>
-  </b:if>
-  <div class='widget-content'>
-    <div expr:id='data:widget.instanceId + &quot;-wrapper&quot;'>
-      <b:if cond='data:codeSnippet != &quot;&quot;'>
-        <div style='margin-right:2px;'>
-          <data:codeSnippet/>
-        </div>
-      </b:if>
-    </div>
-    <b:include name='quickedit'/>
-  </div>
-</b:includable>
-  </b:widget>
   <b:widget id='FeaturedPost1' locked='false' title='Featured Post' type='FeaturedPost'>
     <b:widget-settings>
       <b:widget-setting name='showSnippet'>false</b:widget-setting>
