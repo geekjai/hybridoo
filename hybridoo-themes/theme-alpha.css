@@ -1,3 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
+:root {
+    --body-color: #666659;
+    --body-font: 15px/26px Source Sans Pro, sans serif;
+    --body-background: #FBFAF8;
+    --header-height: 3rem;
+    --nav-width: 68px;
+    --brand-color: #1877F2;
+    --first-color:  #1877F2;
+    --first-color-light: #efeef1;
+    --white-color: #F7F6FB;
+    --body-font: 'Nunito', sans-serif;
+    --normal-font-size: 1rem;
+    --z-fixed: 100
+}
+*,
+::before,
+::after {
+    box-sizing: border-box
+}
 body {
     font: var(--body-font);
     color:var(--body-color);
@@ -664,4 +684,24 @@ footer {
 #hdo-scroll-top-button i {
     margin-top: 5px;
     font-size: 32px;
+}
+/*********************************
+************ Custom Evernote CSS
+*********************************/
+en-note.peso {
+    padding: 0px;
+}
+.html-note h1 {
+    display: none;
+}
+.html-note {
+
+}
+en-note.peso {
+    color: var(--body-color);
+    font: var(--body-font);
+    font-size: var(--normal-font-size);
+}
+en-codeblock {
+    min-width: 300px;
 }
