@@ -120,6 +120,21 @@ $(document).ready(function(){
         });
       }
     }
+    //adjusting evernote-table
+    const tables = document.querySelectorAll('en-table table');
+    if(tables && tables.length > 0) {
+      tables.forEach( table => {
+        table.removeAttribute("style");
+        table.removeAttribute("width");
+        table.setAttribute("class", "table table-striped");
+      });
+    }
+    const enTables = document.querySelectorAll('en-table div.container');
+    if(enTables && enTables.length > 0) {
+      enTables.forEach( enTable => {
+        $( enTable ).parent().replaceWith( "<div class='table-responsive'>" + $( enTable ).html() + "</div>");
+      });
+    }
     //syntax highlighter
     $('pre.code').highlight({source:1, zebra:1, indent:'space', list:'ol'});
 
