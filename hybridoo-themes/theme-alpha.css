@@ -707,8 +707,9 @@ en-codeblock {
     min-width: 300px;
 }
 
-en-note.peso h3 {
-    font-size: 20px;
+.drag-image-holder h3, en-note.peso h3 {
+  font-weight: 500;
+  font-size: 20px;
 }
 
 en-note.peso .para a {
