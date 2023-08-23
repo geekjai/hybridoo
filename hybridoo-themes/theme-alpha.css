@@ -472,6 +472,10 @@ px      68    160    252    */
         padding: 0;
         width: 87%;
     }
+    
+    div.separator.list-group-item>a>img {
+        min-height: 45px;
+    }
 
 }
 /*      Wide Mobile Layout: 480px.
