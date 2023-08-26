@@ -1,3 +1,10 @@
+function hydkfDownload(htmlObj, fileId) {
+  
+  //alert(htmlObj);
+  //<a href="https://drive.google.com/uc?export=download&id=1ZZYBC1GeiLituyuEw4W_OIgTC47VSJxN">
+  window.location = "https://drive.google.com/uc?export=download&id=" + fileId;
+  htmlObj.blur();
+}
 /*
 summary_noimg = 400;
 summary_img = 300;
