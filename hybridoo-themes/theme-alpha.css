@@ -296,7 +296,7 @@ bmMainContent is having column 1. contentbpart and 2. aside (use for AdSense)
 .bmMainContent .entry-content p:not(.card-text) {
     margin:20px 0;
 }
-.bmMainContent .entry-content img:not(.card-img-top) {
+.bmMainContent .entry-content img:not(.card-img-top, .svg-img-doc) {
     max-width:98% !important;
     -webkit-transition: all 0.4s ease-out;
     -moz-transition: all 0.4s ease-out;
@@ -306,7 +306,7 @@ bmMainContent is having column 1. contentbpart and 2. aside (use for AdSense)
     box-sizing: border-box;
 }
 
-.bmMainContent .entry-content img:not(.card-img-top):hover {
+.bmMainContent .entry-content img:not(.card-img-top, .svg-img-doc):hover {
     opacity:0.8;
 }
 /*homepage thumbnail*/
@@ -409,7 +409,7 @@ px      68    160    252    344    436    528    620    712    */
     .bmMainContent .entry-content {
         /*width: 88%;*/
     }
-    .bmMainContent .entry-content img:not(.card-img-top) {
+    .bmMainContent .entry-content img:not(.card-img-top, .svg-img-doc) {
         max-width: 99%;
     }
     .bmMainContent aside {
@@ -459,7 +459,7 @@ px      68    160    252    */
         width: auto;
         padding: 25px;
     }
-    .bmMainContent .entry-content img:not(.card-img-top) {
+    .bmMainContent .entry-content img:not(.card-img-top, .svg-img-doc) {
         max-width: 99%;
         height: auto;
     }
@@ -518,7 +518,7 @@ px      68    160    252    344    436    */
     .bmMainContent .entry-content {
         width: auto;
     }
-    .bmMainContent .entry-content img:not(.card-img-top) {
+    .bmMainContent .entry-content img:not(.card-img-top, .svg-img-doc) {
         max-width: 99%;
         height: auto;
     }

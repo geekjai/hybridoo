@@ -5,6 +5,19 @@ function hydkfDownload(htmlObj, fileId) {
   window.location = "https://drive.google.com/uc?export=download&id=" + fileId;
   htmlObj.blur();
 }
+//svg-img-div | svg-img-doc | svg-pdf-btn
+$(document).ready(function(){
+  $(".svg-img-div").prepend('<div class="spinner-border" role="status"><span class="visually-hidden">Loading...</span></div>');
+  $("button.svg-pdf-btn").attr('disabled','disabled');
+  window.addEventListener("load", event => {
+    var image = document.querySelector('.svg-img-doc');
+    if(image) {
+      var isLoaded = image.complete && image.naturalHeight !== 0;
+      $(".svg-img-div .spinner-border").replaceWith('<div></div>');
+      $("button.svg-pdf-btn").removeAttr('disabled');
+    }
+  });
+});
 /*
 summary_noimg = 400;
 summary_img = 300;
